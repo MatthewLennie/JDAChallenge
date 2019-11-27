@@ -67,7 +67,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 parameters = {'reg_lambda':[0.1,0.3,1],'reg_alpha':[0.1,0.3,1],'n_estimators':[100],'gamma':[0.1,0.2,0.9],'max_depth':[6,7,8,9,10,11,12,13,14],'learning_rate':[0.01,0.1,0.3,0.5]}
 
-clf = xgb.XGBRegressor(base_score = 2,n_jobs=-1)
+clf = xgb.XGBRegressor(base_score = 2,n_jobs=config.n_jobs)
 search = GridSearchCV(clf,parameters,cv=3)
 search.fit(X_train,y_train)
 
