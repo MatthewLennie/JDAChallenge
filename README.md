@@ -64,6 +64,10 @@ For this project, a requirements.txt file is provided.
 2. Approaching real large data sets means that firstly, the data needs to be accessed
 in a way that doesn't require all of the data be pulled on a single machine. 
 
+These can create bottle necks in terms of memory read/write, network bandwidth for distributed training 
+as well as processing bottle necks. 
+
+
 Usually to handle these problems you would use a library which handles the boilerplate 
 of doing lazy evalulation as well as mapping operations over multiple machines and then
 reducing results. One example of a library is DASK; a library that I have been using in my research. 
