@@ -21,7 +21,8 @@ from sklearn.metrics import mean_absolute_error
 import config
 import sklearn.pipeline
 import pickle
-
+from read_in_data import read_in_data
+import pandas as pd
 
 class Preprocess():
     """ Simple wrapper for the encoder for the weekdays.
@@ -114,7 +115,7 @@ class Pipeline():
         pickle.dump(self.model, filename)
 
     def unpickle_pipeline(self, filename="bicycle_tree.pkl"):
-        """pickles pipeline
+        """un-pickles pipeline
         """
         raise NotImplementedError
         self.model = pickle.load(filename)
