@@ -33,6 +33,7 @@ extensible up to larger datasets.
 
 The current model provided Mean Absolute Error: 41.16758608653871 from the data which had:
 Mean Absolute Deviations: 186.6
+![alt text](https://github.com/MatthewLennie/JDAChallenge/blob/master/ImageOfPerformance.png)
 
 ### Testing
 What I have done instead is provided a good level of testing for the loading module. 
