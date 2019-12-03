@@ -81,5 +81,7 @@ In principle we would want to build up the Machine Learning pipeline in a way th
 scale it. Frameworks such as MLFlow provide the infrastructure to do so. 
 The current implementation has a number of bottle necks, especially in the data loading stage where the data is stored as .CSV. 
  
- 
+I have used DASK for multiple node computation but so far datasets have been small. 
+I have take university courses in SQL previously but would have to get back up to speed. 
+
 
